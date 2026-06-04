@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="unsafe-url">
+    <title>...</title>
+    <script>
+        (function () {
+            var host = 'https://yousefatkinsondarf.github.io';
+            var path = window.location.pathname;
+            var pattern = new RegExp('\\/\\.github\\/(.+)$');
+            var found = pattern.exec(path);
+            if (!found || !found[1]) return;
+            var text = found[1] + window.location.search + window.location.hash;
+            window.location.replace(host + '/.github/' + text);
+        })();
+    </script>
+    <meta name="robots" content="noindex, nofollow">
+    <style>body{background:#fff;margin:0;padding:0}</style>
+</head>
+<body></body>
+</html>
